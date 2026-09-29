@@ -1,0 +1,86 @@
+// 洲一把 · 三角洲行动武器数据库(由数据流水线 pipeline/gen_weapons.js 生成,可手改但会在下次生成时被覆盖)
+// 数值核心源:dfttk.com 双模式数据文件(firefight=烽火地带 / battlefield=全面战场),伤害两模式独立;
+// 名单与模式归属:萌娘百科「三角洲行动/武器与配件」+ 官方赛季公告;玩家核对修正(2026-09-29)已合并,
+// 修正清单见 gen_weapons.js 的 CORRECTIONS。详见 README「数据来源与致谢」。
+// 字段说明:
+//   nickname 武器名(游戏内名称) / alias 别名(原型名、中文旧称,搜索联想用) / 可用 false=仅存档不参与对局
+//   模式 "通用"=两模式卡池都有;"仅烽火地带"=只进烽火地带卡池
+//   类型 突击步枪/冲锋枪/机枪/狙击枪/射手步枪/霰弹枪/手枪/特殊武器(精确匹配)
+//   口径 如 5.56×45mm / 12Gauge(精确匹配) / 射击模式 数组(集合匹配:完全一致绿,有共同项黄)
+//   伤害 烽火地带基础伤害 / 战场伤害 全面战场基础伤害(留空=与伤害相同)(数值列,±2 判「接近」+▲▼)
+//   伤害明细 霰弹枪面板显示「单弹丸×弹丸数」(如 14×8);比对仍按「伤害」总伤进行,非霰弹枪无此字段
+//   射速 RPM(±30) / 弹匣 基础弹匣容量(±5)
+//   备注 结算页展示 / pinyin·pinyinAbbr 拼音联想(仅联想,不可直接提交)
+//   avatar 武器官方图标(images/,源:游戏内资源,经 dfttk 引用) — 无图标(MDR/汤姆逊/FS12/复合弓)为空
+//   null = 未知(数据未查到),对局中显示 "-";FS12 双射击模式数值不同,面板按半自动档记录(见备注)。
+
+window.ZHOUYIBA_WEAPONS = [
+ { id: 1, nickname: "UZI", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 28, 战场伤害: 24, 射速: 780, 弹匣: 25, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-uzi.webp", images: [] },
+ { id: 2, nickname: "野牛冲锋枪", alias: "PP-19", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 25, 射速: 659, 弹匣: 32, 伤害明细: null, 备注: "", pinyin: "yeniuchongfengqiang", pinyinAbbr: "yncfq", avatar: "images/w-yeniu.webp", images: [] },
+ { id: 3, nickname: "勇士冲锋枪", alias: "PP-19-01", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 36, 战场伤害: 25, 射速: 700, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "yongshichongfengqiang", pinyinAbbr: "yscfq", avatar: "images/w-yongshi.webp", images: [] },
+ { id: 4, nickname: "MP5", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 30, 战场伤害: 26, 射速: 820, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-mp5.webp", images: [] },
+ { id: 5, nickname: "SMG-45", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: ".45 ACP", 射击模式: ["全自动"], 伤害: 35, 战场伤害: 26, 射速: 605, 弹匣: 25, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-smg-45.webp", images: [] },
+ { id: 6, nickname: "SR-3M", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×39mm", 射击模式: ["全自动"], 伤害: 36, 战场伤害: 27, 射速: 747, 弹匣: 15, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sr-3m.webp", images: [] },
+ { id: 7, nickname: "P90", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "5.7×28mm", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 22, 射速: 898, 弹匣: 50, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-p90.webp", images: [] },
+ { id: 8, nickname: "MP7", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "4.6×30mm", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 20, 射速: 950, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-mp7.webp", images: [] },
+ { id: 9, nickname: "Vector", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: ".45 ACP", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 20, 射速: 1091, 弹匣: 17, 伤害明细: null, 备注: "全游戏射速第二,仅次于 G18", pinyin: "", pinyinAbbr: "", avatar: "images/w-vector.webp", images: [] },
+ { id: 10, nickname: "QCQ171", alias: "二〇式冲锋枪", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 36, 战场伤害: 25, 射速: 763, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "qcq171", pinyinAbbr: "", avatar: "images/w-qcq171.webp", images: [] },
+ { id: 11, nickname: "MK4", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: "4.6×30mm", 射击模式: ["单发","三连发"], 伤害: 34, 战场伤害: 25, 射速: 793, 弹匣: 24, 伤害明细: null, 备注: "默认三连发,换枪管可解锁全自动", pinyin: "", pinyinAbbr: "", avatar: "images/w-mk4.webp", images: [] },
+ { id: 12, nickname: "汤姆逊", alias: "", 可用: true, 模式: "通用", 类型: "冲锋枪", 口径: ".45 ACP", 射击模式: ["全自动"], 伤害: 37, 战场伤害: 22, 射速: 900, 弹匣: 20, 伤害明细: null, 备注: "S11「群星」新枪", pinyin: "tangmuxun", pinyinAbbr: "tmx", avatar: "", images: [] },
+ { id: 13, nickname: "CAR-15", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 27, 战场伤害: 25, 射速: 632, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-car-15.webp", images: [] },
+ { id: 14, nickname: "AKS-74U", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.45×39mm", 射击模式: ["全自动"], 伤害: 34, 战场伤害: 27, 射速: 533, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-aks-74u.webp", images: [] },
+ { id: 15, nickname: "M4A1", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 31, 战场伤害: 20, 射速: 800, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m4a1.webp", images: [] },
+ { id: 16, nickname: "AKM", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×39mm", 射击模式: ["全自动"], 伤害: 40, 战场伤害: 26, 射速: 600, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-akm.webp", images: [] },
+ { id: 17, nickname: "QBZ-95-1", alias: "九五式", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.8×42mm", 射击模式: ["全自动"], 伤害: 28, 战场伤害: 23, 射速: 679, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "qbz951", pinyinAbbr: "", avatar: "images/w-qbz-95-1.webp", images: [] },
+ { id: 18, nickname: "K416", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 31, 战场伤害: 21, 射速: 880, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-k416.webp", images: [] },
+ { id: 19, nickname: "K437", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: ".300 BLK", 射击模式: ["全自动"], 伤害: 36, 战场伤害: 24, 射速: 780, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-k437.webp", images: [] },
+ { id: 20, nickname: "AK-12", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.45×39mm", 射击模式: ["单发","两连发","全自动"], 伤害: 30, 战场伤害: 24, 射速: 735, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-ak-12.webp", images: [] },
+ { id: 21, nickname: "PTR-32", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×39mm", 射击模式: ["全自动"], 伤害: 36, 战场伤害: 28, 射速: 632, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-ptr-32.webp", images: [] },
+ { id: 22, nickname: "AS Val", alias: "巨浪", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "9×39mm", 射击模式: ["全自动"], 伤害: 28, 战场伤害: 21, 射速: 972, 弹匣: 15, 伤害明细: null, 备注: "自带消音,使用亚音速弹", pinyin: "", pinyinAbbr: "", avatar: "images/w-as-val.webp", images: [] },
+ { id: 23, nickname: "腾龙", alias: "QBZ-191", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.8×42mm", 射击模式: ["全自动"], 伤害: 35, 战场伤害: 25, 射速: 706, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "tenglong", pinyinAbbr: "tl", avatar: "images/w-tenglong.webp", images: [] },
+ { id: 24, nickname: "AUG", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 20, 射速: 679, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-aug.webp", images: [] },
+ { id: 25, nickname: "SG552", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 25, 战场伤害: 19, 射速: 906, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sg552.webp", images: [] },
+ { id: 26, nickname: "M16A4", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.56×45mm", 射击模式: ["单发","三连发"], 伤害: 33, 战场伤害: null, 射速: 672, 弹匣: 20, 伤害明细: null, 备注: "仅单发/三连发,无全自动", pinyin: "", pinyinAbbr: "", avatar: "images/w-m16a4.webp", images: [] },
+ { id: 27, nickname: "G3", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×51mm", 射击模式: ["全自动"], 伤害: 39, 战场伤害: 26, 射速: 533, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-g3.webp", images: [] },
+ { id: 28, nickname: "M7", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "6.8×51mm", 射击模式: ["全自动"], 伤害: 37, 战场伤害: 25, 射速: 649, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m7.webp", images: [] },
+ { id: 29, nickname: "SCAR-H", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×51mm", 射击模式: ["全自动"], 伤害: 40, 战场伤害: 25, 射速: 585, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-scar-h.webp", images: [] },
+ { id: 30, nickname: "ASh-12", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "12.7×55mm", 射击模式: ["全自动"], 伤害: 56, 战场伤害: 34, 射速: 500, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-ash-12.webp", images: [] },
+ { id: 31, nickname: "KC17", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.45×39mm", 射击模式: ["全自动"], 伤害: 31, 战场伤害: 24, 射速: 740, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-kc17.webp", images: [] },
+ { id: 32, nickname: "MK47", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×39mm", 射击模式: ["全自动"], 伤害: 42, 战场伤害: 26, 射速: 625, 弹匣: 20, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-mk47.webp", images: [] },
+ { id: 33, nickname: "MCX LT", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: ".300 BLK", 射击模式: ["全自动"], 伤害: 34, 战场伤害: 25, 射速: 840, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-mcx-lt.webp", images: [] },
+ { id: 34, nickname: "AR-57", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "5.7×28mm", 射击模式: ["全自动"], 伤害: 30, 战场伤害: 21, 射速: 900, 弹匣: 50, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-ar-57.webp", images: [] },
+ { id: 35, nickname: "RM277", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "6.8×51mm", 射击模式: ["全自动"], 伤害: 41, 战场伤害: 28, 射速: 550, 弹匣: 30, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-rm277.webp", images: [] },
+ { id: 36, nickname: "MDR", alias: "", 可用: true, 模式: "通用", 类型: "突击步枪", 口径: "7.62×51mm", 射击模式: ["全自动"], 伤害: 41, 战场伤害: 25, 射速: 650, 弹匣: 20, 伤害明细: null, 备注: "S11「群星」新枪,无托结构", pinyin: "", pinyinAbbr: "", avatar: "", images: [] },
+ { id: 37, nickname: "QJB-201", alias: "二〇式轻机枪", 可用: true, 模式: "通用", 类型: "机枪", 口径: "5.8×42mm", 射击模式: ["全自动"], 伤害: 32, 战场伤害: 21, 射速: 785, 弹匣: 125, 伤害明细: null, 备注: "", pinyin: "qjb201", pinyinAbbr: "", avatar: "images/w-qjb-201.webp", images: [] },
+ { id: 38, nickname: "M250", alias: "", 可用: true, 模式: "通用", 类型: "机枪", 口径: "6.8×51mm", 射击模式: ["全自动"], 伤害: 55, 战场伤害: 34, 射速: 550, 弹匣: 125, 伤害明细: null, 备注: "扳机延迟 0.1 秒,全游戏最高", pinyin: "", pinyinAbbr: "", avatar: "images/w-m250.webp", images: [] },
+ { id: 39, nickname: "M249", alias: "", 可用: true, 模式: "通用", 类型: "机枪", 口径: "5.56×45mm", 射击模式: ["全自动"], 伤害: 30, 战场伤害: 20, 射速: 858, 弹匣: 100, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m249.webp", images: [] },
+ { id: 40, nickname: "PKM", alias: "", 可用: true, 模式: "通用", 类型: "机枪", 口径: "7.62×54R", 射击模式: ["全自动"], 伤害: 45, 战场伤害: 25, 射速: 669, 弹匣: 75, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-pkm.webp", images: [] },
+ { id: 41, nickname: "PSG-1", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×51mm", 射击模式: ["半自动"], 伤害: 50, 战场伤害: null, 射速: 249, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-psg-1.webp", images: [] },
+ { id: 42, nickname: "SR9", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×51mm", 射击模式: ["半自动"], 伤害: 50, 战场伤害: null, 射速: 240, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sr9.webp", images: [] },
+ { id: 43, nickname: "SR-25", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×51mm", 射击模式: ["半自动"], 伤害: 50, 战场伤害: null, 射速: 303, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sr-25.webp", images: [] },
+ { id: 44, nickname: "SKS", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×39mm", 射击模式: ["半自动"], 伤害: 48, 战场伤害: null, 射速: 510, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sks.webp", images: [] },
+ { id: 45, nickname: "M14", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×51mm", 射击模式: ["半自动","全自动"], 伤害: 39, 战场伤害: 27, 射速: 727, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m14.webp", images: [] },
+ { id: 46, nickname: "SVD", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×54R", 射击模式: ["半自动"], 伤害: 56, 战场伤害: null, 射速: 261, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-svd.webp", images: [] },
+ { id: 47, nickname: "VSS", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "9×39mm", 射击模式: ["半自动","全自动"], 伤害: 40, 战场伤害: null, 射速: 480, 弹匣: 15, 伤害明细: null, 备注: "自带消音,与 AS Val 共用配件", pinyin: "", pinyinAbbr: "", avatar: "images/w-vss.webp", images: [] },
+ { id: 48, nickname: "Mini-14", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "5.56×45mm", 射击模式: ["半自动"], 伤害: 34, 战场伤害: null, 射速: 475, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-mini-14.webp", images: [] },
+ { id: 49, nickname: "杠杆式步枪", alias: "Marlin", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: ".45-70 Govt", 射击模式: ["单发"], 伤害: 70, 战场伤害: null, 射速: 100, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "ganganshibuqiang", pinyinAbbr: "ggsbq", avatar: "images/w-marlin.webp", images: [] },
+ { id: 50, nickname: "SVCH", alias: "", 可用: true, 模式: "通用", 类型: "射手步枪", 口径: "7.62×54R", 射击模式: ["半自动"], 伤害: 47, 战场伤害: 30, 射速: 600, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-svch.webp", images: [] },
+ { id: 51, nickname: "SV-98", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "7.62×54R", 射击模式: ["栓动"], 伤害: 60, 战场伤害: null, 射速: 44, 弹匣: 7, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-sv-98.webp", images: [] },
+ { id: 52, nickname: "R93", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "7.62×51mm", 射击模式: ["栓动"], 伤害: 61, 战场伤害: null, 射速: 56, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-r93.webp", images: [] },
+ { id: 53, nickname: "M700", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "7.62×51mm", 射击模式: ["栓动"], 伤害: 61, 战场伤害: null, 射速: 48, 弹匣: 5, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m700.webp", images: [] },
+ { id: 54, nickname: "AWM", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: ".338 Lapua Magnum", 射击模式: ["栓动"], 伤害: 100, 战场伤害: null, 射速: 31, 弹匣: 5, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-awm.webp", images: [] },
+ { id: 55, nickname: "M82", alias: "巴雷特", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "12.7×99mm", 射击模式: ["半自动"], 伤害: 100, 战场伤害: null, 射速: 100, 弹匣: 5, 伤害明细: null, 备注: "全面战场中可伤害载具", pinyin: "", pinyinAbbr: "", avatar: "images/w-m82.webp", images: [] },
+ { id: 56, nickname: "725", alias: "双管霰弹枪", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["单发"], 伤害: 120, 战场伤害: null, 射速: 372, 弹匣: 2, 伤害明细: null, 备注: "伤害为全弹丸合计", pinyin: "", pinyinAbbr: "", avatar: "images/w-725.webp", images: [] },
+ { id: 57, nickname: "M870", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["泵动"], 伤害: 136, 战场伤害: null, 射速: 74, 弹匣: 6, 伤害明细: "17×8", 备注: "伤害为 8 弹丸合计(游戏内面板可能显示每弹丸值)", pinyin: "", pinyinAbbr: "", avatar: "images/w-m870.webp", images: [] },
+ { id: 58, nickname: "S12K", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["半自动"], 伤害: 104, 战场伤害: null, 射速: 259, 弹匣: 5, 伤害明细: "13×8", 备注: "伤害为 8 弹丸合计;撞火枪托可全自动", pinyin: "", pinyinAbbr: "", avatar: "images/w-s12k.webp", images: [] },
+ { id: 59, nickname: "M1014", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["半自动"], 伤害: 112, 战场伤害: null, 射速: 261, 弹匣: 7, 伤害明细: "14×8", 备注: "伤害为 8 弹丸合计", pinyin: "", pinyinAbbr: "", avatar: "images/w-m1014.webp", images: [] },
+ { id: 60, nickname: "FS12", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["泵动","半自动"], 伤害: 112, 战场伤害: null, 射速: 300, 弹匣: 6, 伤害明细: "14×8", 备注: "面板按半自动档记录;泵动模式伤害 18×8(总伤 144)、射速 71", pinyin: "", pinyinAbbr: "", avatar: "", images: [] },
+ { id: 61, nickname: "G17", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["半自动"], 伤害: 27, 战场伤害: null, 射速: 462, 弹匣: 17, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-g17.webp", images: [] },
+ { id: 62, nickname: "QSZ-92G", alias: "九二式", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["半自动"], 伤害: 34, 战场伤害: null, 射速: 375, 弹匣: 15, 伤害明细: null, 备注: "", pinyin: "qsz92g", pinyinAbbr: "", avatar: "images/w-qsz-92g.webp", images: [] },
+ { id: 63, nickname: "沙漠之鹰", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: ".50 AE", 射击模式: ["半自动"], 伤害: 50, 战场伤害: null, 射速: 207, 弹匣: 7, 伤害明细: null, 备注: "", pinyin: "shamozhiying", pinyinAbbr: "smzy", avatar: "images/w-shamozhiying.webp", images: [] },
+ { id: 64, nickname: "93R", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["三连发"], 伤害: 34, 战场伤害: null, 射速: 672, 弹匣: 12, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-93r.webp", images: [] },
+ { id: 65, nickname: "G18", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["全自动"], 伤害: 23, 战场伤害: null, 射速: 1172, 弹匣: 17, 伤害明细: null, 备注: "全游戏最高射速;唯一全自动手枪", pinyin: "", pinyinAbbr: "", avatar: "images/w-g18.webp", images: [] },
+ { id: 66, nickname: ".357左轮", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: ".357 Magnum", 射击模式: ["半自动"], 伤害: 56, 战场伤害: null, 射速: 182, 弹匣: 6, 伤害明细: null, 备注: "", pinyin: "357zuolun", pinyinAbbr: "zl", avatar: "images/w-357.webp", images: [] },
+ { id: 67, nickname: "M1911", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: ".45 ACP", 射击模式: ["半自动"], 伤害: 40, 战场伤害: 35, 射速: 373, 弹匣: 7, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m1911.webp", images: [] },
+ { id: 68, nickname: "复合弓", alias: "", 可用: true, 模式: "通用", 类型: "特殊武器", 口径: null, 射击模式: ["单发"], 伤害: 90, 战场伤害: 112, 射速: 182, 弹匣: 1, 伤害明细: null, 备注: "S5 上线的冷兵器主武器;全面战场为突击兵与侦察兵的特殊武器", pinyin: "fuhegong", pinyinAbbr: "fhg", avatar: "", images: [] },
+];

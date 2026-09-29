@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2f6f73" />
+    <meta
+      name="description"
+      content="查询三角洲行动烽火与战场模式的枪械 TTK、BTK、枪械强度排行、武器配件、伤害衰减、枪口初速和数据图鉴。"
+    />
+    <meta
+      name="keywords"
+      content="三角洲行动TTK,三角洲行动枪械数据,三角洲行动枪械强度,三角洲行动枪械排行,三角洲行动武器排行,三角洲行动枪械推荐,三角洲行动战场,三角洲行动烽火,三角洲行动配件,枪械击杀用时,DFTTK"
+    />
+    <link rel="canonical" href="https://dfttk.com/firefight/ttk" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="DFTTK AI instructions" />
+    <link rel="alternate" type="application/json" href="/ai/context.json" title="DFTTK AI calculator contract" />
+    <meta property="og:site_name" content="三角洲行动枪械击杀用时查询" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="三角洲行动 TTK 查询 - 枪械强度排行、击杀用时、数据图鉴" />
+    <meta
+      property="og:description"
+      content="查询三角洲行动烽火与战场模式的枪械 TTK、BTK、枪械强度排行、武器配件、伤害衰减、枪口初速和数据图鉴。"
+    />
+    <meta property="og:url" content="https://dfttk.com/firefight/ttk" />
+    <meta property="og:image" content="https://dfttk.com/dfttk-search-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta property="og:image:alt" content="DFTTK 多枪 TTK 对比界面" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="三角洲行动 TTK 查询 - 枪械强度排行、击杀用时、数据图鉴" />
+    <meta
+      name="twitter:description"
+      content="查询三角洲行动烽火与战场模式的枪械 TTK、BTK、枪械强度排行、武器配件、伤害衰减、枪口初速和数据图鉴。"
+    />
+    <meta name="twitter:image" content="https://dfttk.com/dfttk-search-preview.png" />
+    <meta name="twitter:image:alt" content="DFTTK 多枪 TTK 对比界面" />
+    <link rel="image_src" href="https://dfttk.com/dfttk-search-thumbnail.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Vite copies files from `public` to the build root, so root-relative URLs
+      keep these app-shell resources stable across client-side routes.
+    -->
+    <title>三角洲行动 TTK 查询 - 枪械强度排行、击杀用时、数据图鉴</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "三角洲行动枪械击杀用时查询",
+        "alternateName": "DFTTK",
+        "url": "https://dfttk.com/firefight/ttk",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web",
+        "description": "查询三角洲行动烽火与战场模式的枪械 TTK、BTK、枪械强度排行、武器配件、伤害衰减、枪口初速和数据图鉴。",
+        "keywords": "三角洲行动TTK, 三角洲行动枪械强度, 三角洲行动枪械排行, 三角洲行动武器排行, 三角洲行动枪械数据",
+        "inLanguage": "zh-CN",
+        "image": [
+          "https://dfttk.com/dfttk-search-thumbnail.png",
+          "https://dfttk.com/dfttk-search-preview.png"
+        ],
+        "thumbnailUrl": "https://dfttk.com/dfttk-search-thumbnail.png",
+        "screenshot": "https://dfttk.com/dfttk-search-preview.png"
+      }
+    </script>
+    <script>
+      (function() {
+        var analyticsHosts = ["dfttk.com", "www.dfttk.com"];
+        if (analyticsHosts.indexOf(window.location.hostname) === -1) {
+          return;
+        }
+        window._hmt = window._hmt || [];
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?47ea88e1f4c646a78c3b71160784f892";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script type="module" crossorigin src="/static/index-UmeP_6YF.js"></script>
+    <link rel="modulepreload" crossorigin href="/static/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="/static/weaponBuilderV3Curves-DHR0qFpC.js">
+    <link rel="stylesheet" crossorigin href="/static/index-DU-DopJi.css">
+    <script type="module">import'data:text/javascript,if(!import.meta.resolve)throw Error("import.meta.resolve not supported")';import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="/static/polyfills-legacy-Dl0I2Rcy.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/static/index-legacy-Diqw2LFY.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>

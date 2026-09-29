@@ -1,0 +1,1901 @@
+[
+ {
+  "name": "UZI冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 780,
+  "mag": 25,
+  "damageOps": 28,
+  "damageWarfare": 24,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.9,
+   "triggerDelayMs": 67,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速450;UZI有67ms扳机延迟。bittopup旧版面板与当前一致"
+ },
+ {
+  "name": "野牛冲锋枪(PP-19)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 659,
+  "mag": 32,
+  "damageOps": 32,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.875,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "可加64发弹筒;初速500"
+ },
+ {
+  "name": "勇士冲锋枪(PP-19-01)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 700,
+  "mag": 30,
+  "damageOps": 36,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "萌百未明说射击模式,按冲锋枪类自动火力推断;初速500"
+ },
+ {
+  "name": "MP5冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 820,
+  "mag": 30,
+  "damageOps": 30,
+  "damageWarfare": 26,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 32,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速450"
+ },
+ {
+  "name": "SMG-45冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 605,
+  "mag": 25,
+  "damageOps": 35,
+  "damageWarfare": 26,
+  "extra": {
+   "caliber": ".45ACP",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 40,
+   "rangeTiersOps": [
+    27,
+    54,
+    90
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速500"
+ },
+ {
+  "name": "SR-3M紧凑突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 747,
+  "mag": 15,
+  "damageOps": 36,
+  "damageWarfare": 27,
+  "extra": {
+   "caliber": "9x39mm",
+   "muzzleVelocityOps": 330,
+   "armorDamageOps": 48,
+   "rangeTiersOps": [
+    15,
+    30,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 330
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x39亚音速,初速330;萌百:全面战场远距离衰减更小、基础伤害更高"
+ },
+ {
+  "name": "P90冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 898,
+  "mag": 50,
+  "damageOps": 32,
+  "damageWarfare": 22,
+  "extra": {
+   "caliber": "5.7x28mm",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.875,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速450;战场另有P90长弓枪管变体(rpm785/初速600)"
+ },
+ {
+  "name": "MP7冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 950,
+  "mag": 20,
+  "damageOps": 32,
+  "damageWarfare": 20,
+  "extra": {
+   "caliber": "4.6x30mm",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 28,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速450;烽火伤害旧版29->当前32(版本调整)"
+ },
+ {
+  "name": "Vector冲锋枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 1091,
+  "mag": 17,
+  "damageOps": 32,
+  "damageWarfare": 20,
+  "extra": {
+   "caliber": ".45ACP",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 28,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.875,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://wiki.bittopup.com/deltaforce/guns/18020000003",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速500;全游戏射速第二(仅次于G18);bittopup详情页与dfttk完全一致(32/1091/17发/初速500)"
+ },
+ {
+  "name": "QCQ171冲锋枪(二〇式冲锋枪)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 763,
+  "mag": 30,
+  "damageOps": 36,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 33,
+   "rangeTiersOps": [
+    20,
+    27,
+    38
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "初速450;穿甲/修脚双玩法流行(S10)"
+ },
+ {
+  "name": "MK4冲锋枪",
+  "fireModes": [
+   "单发",
+   "三连发"
+  ],
+  "rpm": 793,
+  "mag": 24,
+  "damageOps": 34,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "4.6x30mm",
+   "muzzleVelocityOps": 475,
+   "armorDamageOps": 30,
+   "rangeTiersOps": [
+    20,
+    30,
+    40
+   ],
+   "headMultiplierOps": 2,
+   "muzzleVelocityWarfare": 475
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "默认三连发(连内1200rpm,间隔135ms)+单发;换枪管(深空镀铬/击剑)可解锁全自动;战场存在MK4全自动变体(dmg23/rpm872);胸腹同伤、四肢0.5倍率;初速475"
+ },
+ {
+  "name": "汤姆逊冲锋枪",
+  "fireModes": [],
+  "rpm": null,
+  "mag": null,
+  "damageOps": null,
+  "damageWarfare": null,
+  "extra": {},
+  "sources": [],
+  "confidence": "low",
+  "notes": "S11重新校准(Reorientation)赛季新枪,.45ACP大口径高射速冲锋枪;未查到任何面板数值(dfttk尚未收录)"
+ },
+ {
+  "name": "CAR-15突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 632,
+  "mag": 20,
+  "damageOps": 27,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 32,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "俗称豌豆射手;初速575;另有AR特勤一体消音组合枪管变体"
+ },
+ {
+  "name": "AKS-74U突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 533,
+  "mag": 20,
+  "damageOps": 34,
+  "damageWarfare": 27,
+  "extra": {
+   "caliber": "5.45x39mm",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 36,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速500"
+ },
+ {
+  "name": "M4A1突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 800,
+  "mag": 30,
+  "damageOps": 31,
+  "damageWarfare": 20,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 33,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://wiki.bittopup.com/deltaforce/guns/18010000001",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "初速575(战场550);烽火伤害旧版27->当前31(版本调整);战场伤害20与9game攻略站战场面板一致;另有AR特勤一体消音枪管变体"
+ },
+ {
+  "name": "AKM突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 600,
+  "mag": 30,
+  "damageOps": 40,
+  "damageWarfare": 26,
+  "extra": {
+   "caliber": "7.62x39mm",
+   "muzzleVelocityOps": 525,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速525;性能枪管组合可将爆头倍率提至2.5;有性能枪管变体"
+ },
+ {
+  "name": "九五式自动步枪(QBZ-95-1)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 679,
+  "mag": 30,
+  "damageOps": 28,
+  "damageWarfare": 23,
+  "extra": {
+   "caliber": "5.8x42mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 2.3,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速575;战场dfttk条目名为QBZ95;烽火伤害旧版27->当前28"
+ },
+ {
+  "name": "K416突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 880,
+  "mag": 30,
+  "damageOps": 31,
+  "damageWarfare": 21,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    27,
+    54,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "HK416原型;初速575(战场550);烽火伤害旧版29->当前31"
+ },
+ {
+  "name": "K437突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 780,
+  "mag": 30,
+  "damageOps": 36,
+  "damageWarfare": 24,
+  "extra": {
+   "caliber": ".300BLK",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 32,
+   "rangeTiersOps": [
+    35,
+    60,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "HK437原型,.300BLK;初速575"
+ },
+ {
+  "name": "AK-12突击步枪",
+  "fireModes": [
+   "单发",
+   "两连发",
+   "全自动"
+  ],
+  "rpm": 735,
+  "mag": 30,
+  "damageOps": 30,
+  "damageWarfare": 24,
+  "extra": {
+   "caliber": "5.45x39mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "萌百明确三种射击模式;初速575(战场550);S10四肢倍率0.4->0.45(与dfttk当前0.45吻合,证明数据为新版本);烽火伤害旧版27->当前30"
+ },
+ {
+  "name": "PTR-32突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 632,
+  "mag": 30,
+  "damageOps": 36,
+  "damageWarfare": 28,
+  "extra": {
+   "caliber": "7.62x39mm",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 37,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://wiki.bittopup.com/deltaforce/guns/18010000024",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "与AUG通用弹匣(30发,bittopup确认);初速630(战场550);烽火伤害旧版34->当前36"
+ },
+ {
+  "name": "AS Val突击步枪(巨浪)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 972,
+  "mag": 15,
+  "damageOps": 28,
+  "damageWarfare": 21,
+  "extra": {
+   "caliber": "9x39mm",
+   "muzzleVelocityOps": 300,
+   "armorDamageOps": 44,
+   "rangeTiersOps": [
+    21,
+    54,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 330
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x39,初速300;射速972媲美冲锋枪;刺客高级枪管变体为四连发(850rpm):烽火dmg37,战场dmg26/rpm680;烽火伤害旧版29->当前28"
+ },
+ {
+  "name": "腾龙突击步枪(QBZ-191/二〇式自动步枪)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 706,
+  "mag": 30,
+  "damageOps": 35,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "5.8x42mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 38,
+   "rangeTiersOps": [
+    35,
+    62,
+    999
+   ],
+   "headMultiplierOps": 2.1,
+   "muzzleVelocityWarfare": 575
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "初速575;爆头倍率2.1(有额外爆头加成)"
+ },
+ {
+  "name": "AUG突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 679,
+  "mag": 30,
+  "damageOps": 32,
+  "damageWarfare": 20,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 35,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 2,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "初速575(战场550);萌百未明说模式,按自动步枪推断;烽火伤害旧版29->当前32"
+ },
+ {
+  "name": "SG552突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 906,
+  "mag": 20,
+  "damageOps": 25,
+  "damageWarfare": 19,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 34,
+   "rangeTiersOps": [
+    35,
+    65,
+    999
+   ],
+   "headMultiplierOps": 1.875,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "俗称糖豆发射器;高射速906;初速575(战场550);烽火伤害旧版22->当前25"
+ },
+ {
+  "name": "M16A4突击步枪",
+  "fireModes": [
+   "单发",
+   "三连发"
+  ],
+  "rpm": 672,
+  "mag": 20,
+  "damageOps": 33,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 39,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "三连发(连内1200rpm,间隔250ms)+单发,无全自动(萌百+dfttk双确认);dfttk战场数据未收录该枪"
+ },
+ {
+  "name": "G3战斗步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 533,
+  "mag": 20,
+  "damageOps": 39,
+  "damageWarfare": 26,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 630
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速630(战场550);萌百称有效射程最远的步枪"
+ },
+ {
+  "name": "M7战斗步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 649,
+  "mag": 20,
+  "damageOps": 37,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "6.8x51mm",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 40,
+   "rangeTiersOps": [
+    50,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 600
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://wiki.bittopup.com/deltaforce/guns/18010000016",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "6.8x51;初速630(战场600);bittopup确认弹匣20发;堤风超长枪管变体烽火dmg39;烽火伤害旧版40->当前37"
+ },
+ {
+  "name": "SCAR-H战斗步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 585,
+  "mag": 20,
+  "damageOps": 40,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 41,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 630
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速630"
+ },
+ {
+  "name": "ASh-12战斗步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 500,
+  "mag": 20,
+  "damageOps": 56,
+  "damageWarfare": 34,
+  "extra": {
+   "caliber": "12.7x55",
+   "muzzleVelocityOps": 340,
+   "armorDamageOps": 55,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.6,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "12.7x55;初速340;战斧重型枪管变体:烽火dmg75,战场dmg50/rpm400"
+ },
+ {
+  "name": "KC17突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 740,
+  "mag": 30,
+  "damageOps": 31,
+  "damageWarfare": 24,
+  "extra": {
+   "caliber": "5.45x39mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 48,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 500
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "5.45x39;初速575(战场500);S7加强+限定4级超压弹"
+ },
+ {
+  "name": "MK47突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 625,
+  "mag": 20,
+  "damageOps": 42,
+  "damageWarfare": 26,
+  "extra": {
+   "caliber": "7.62x39mm",
+   "muzzleVelocityOps": 525,
+   "armorDamageOps": 46,
+   "rangeTiersOps": [
+    30,
+    45,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 525
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "7.62x39;初速525;鏖战枪管烽火dmg46、余烬枪管烽火dmg45"
+ },
+ {
+  "name": "MCX LT突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 840,
+  "mag": 30,
+  "damageOps": 34,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": ".300BLK",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 26,
+   "rangeTiersOps": [
+    30,
+    50,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 450
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": ".300BLK;初速450;焰魂枪管变体烽火dmg36"
+ },
+ {
+  "name": "AR-57突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 900,
+  "mag": 50,
+  "damageOps": 30,
+  "damageWarfare": 21,
+  "extra": {
+   "caliber": "5.7x28mm",
+   "muzzleVelocityOps": 525,
+   "armorDamageOps": 31,
+   "rangeTiersOps": [
+    35,
+    50,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 525
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "5.7x28,沿用P90弹匣(50发);初速525;S9赛季新枪"
+ },
+ {
+  "name": "RM277突击步枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 550,
+  "mag": null,
+  "damageOps": 41,
+  "damageWarfare": 28,
+  "extra": {
+   "caliber": "6.8x51mm",
+   "muzzleVelocityOps": 650,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    55,
+    100,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 600
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "6.8x51;初速650(战场600);S10裂变赛季新枪;胸腹同伤(与dfttk腹部倍率1.0吻合);弹匣容量未查到"
+ },
+ {
+  "name": "MDR突击步枪",
+  "fireModes": [],
+  "rpm": null,
+  "mag": null,
+  "damageOps": null,
+  "damageWarfare": null,
+  "extra": {},
+  "sources": [],
+  "confidence": "low",
+  "notes": "7.62x51;重新校准(Reorientation)赛季新枪;未查到任何面板数值"
+ },
+ {
+  "name": "QJB-201轻机枪(二〇式轻机枪)",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 785,
+  "mag": 125,
+  "damageOps": 32,
+  "damageWarfare": 21,
+  "extra": {
+   "caliber": "5.8x42mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 38,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 2.1,
+   "triggerDelayMs": 67,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "5.8x42;初速575(战场550);扳机延迟67ms"
+ },
+ {
+  "name": "M250通用机枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 550,
+  "mag": 125,
+  "damageOps": 55,
+  "damageWarfare": 34,
+  "extra": {
+   "caliber": "6.8x51mm",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 53,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.82,
+   "triggerDelayMs": 100,
+   "muzzleVelocityWarfare": 633
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "6.8x51;初速630(战场633);扳机延迟0.1秒全游戏最高(萌百+dfttk双确认);可改75发弹链;有钛金长枪管变体"
+ },
+ {
+  "name": "M249轻机枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 858,
+  "mag": 100,
+  "damageOps": 30,
+  "damageWarfare": 20,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 38,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "triggerDelayMs": 50,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "5.56x45;初速575(战场550);扳机延迟50ms"
+ },
+ {
+  "name": "PKM通用机枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 669,
+  "mag": 75,
+  "damageOps": 45,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": "7.62x54R",
+   "muzzleVelocityOps": 630,
+   "armorDamageOps": 42,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "triggerDelayMs": 50,
+   "muzzleVelocityWarfare": 546
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x54R;初速630(战场546);扳机延迟50ms"
+ },
+ {
+  "name": "PSG-1射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 249,
+  "mag": 10,
+  "damageOps": 50,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 750,
+   "armorDamageOps": 55,
+   "rangeTiersOps": [
+    90,
+    999
+   ],
+   "headMultiplierOps": 2.1
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速750;旧版射速300->当前249(DMR射速调整)"
+ },
+ {
+  "name": "SR9射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 240,
+  "mag": 10,
+  "damageOps": 50,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 750,
+   "armorDamageOps": 55,
+   "rangeTiersOps": [
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速750"
+ },
+ {
+  "name": "SR-25射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 303,
+  "mag": 10,
+  "damageOps": 50,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 550,
+   "armorDamageOps": 55,
+   "rangeTiersOps": [
+    60,
+    999
+   ],
+   "headMultiplierOps": 2.1
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速550;瞬息短枪管变体烽火dmg55/rpm364;旧版射速364->当前303"
+ },
+ {
+  "name": "SKS射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 411,
+  "mag": 10,
+  "damageOps": 48,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x39mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 49,
+   "rangeTiersOps": [
+    54,
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "7.62x39;初速575;固定10发弹仓;旧版伤害44/射速510->当前48/411(版本调整,萌百2025-06仍记载510)"
+ },
+ {
+  "name": "M14战斗射手步枪",
+  "fireModes": [
+   "半自动",
+   "全自动"
+  ],
+  "rpm": 727,
+  "mag": 10,
+  "damageOps": 39,
+  "damageWarfare": 27,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 575,
+   "armorDamageOps": 41,
+   "rangeTiersOps": [
+    40,
+    70,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 633
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速575(战场633)"
+ },
+ {
+  "name": "SVD射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 261,
+  "mag": 10,
+  "damageOps": 56,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x54R",
+   "muzzleVelocityOps": 500,
+   "armorDamageOps": 56,
+   "rangeTiersOps": [
+    70,
+    90,
+    999
+   ],
+   "headMultiplierOps": 2.32
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x54R;初速500;爆头倍率2.32;旧版射速300->当前261"
+ },
+ {
+  "name": "VSS射手步枪",
+  "fireModes": [
+   "半自动",
+   "全自动"
+  ],
+  "rpm": 480,
+  "mag": 15,
+  "damageOps": 40,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "9x39mm",
+   "muzzleVelocityOps": 330,
+   "armorDamageOps": 48,
+   "rangeTiersOps": [
+    120,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x39亚音速,初速330;萌百明确半自动+全自动双模式;旧版伤害35->当前40"
+ },
+ {
+  "name": "Mini-14射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 475,
+  "mag": 10,
+  "damageOps": 34,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "5.56x45mm",
+   "muzzleVelocityOps": 650,
+   "armorDamageOps": 38,
+   "rangeTiersOps": [
+    90,
+    999
+   ],
+   "headMultiplierOps": 1.875
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "5.56x45;初速650;旧版伤害32/射速590->当前34/475"
+ },
+ {
+  "name": "Marlin杠杆步枪",
+  "fireModes": [
+   "单发(杠杆式)"
+  ],
+  "rpm": 100,
+  "mag": 10,
+  "damageOps": 70,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "45-70 Govt",
+   "muzzleVelocityOps": 750,
+   "armorDamageOps": 25,
+   "rangeTiersOps": [
+    30,
+    50,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": ".45-70 Govt;初速750;犀牛杠杆烽火dmg100、蜂鸟杠杆烽火dmg75"
+ },
+ {
+  "name": "SVCH射手步枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 600,
+  "mag": 10,
+  "damageOps": 47,
+  "damageWarfare": 30,
+  "extra": {
+   "caliber": "7.62x54R",
+   "muzzleVelocityOps": 680,
+   "armorDamageOps": 46,
+   "rangeTiersOps": [
+    65,
+    999
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 600
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "7.62x54R;初速680(战场600);扩容20发;全自动枪管配件:前三发700rpm后回600;萌百记肉伤46/甲伤47,dfttk为肉伤47/甲伤46(互换,存疑);战场伤害30与萌百所称战场甲伤30一致"
+ },
+ {
+  "name": "SV-98狙击步枪",
+  "fireModes": [
+   "栓动"
+  ],
+  "rpm": 44,
+  "mag": 7,
+  "damageOps": 60,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x54R",
+   "muzzleVelocityOps": 650,
+   "armorDamageOps": 58,
+   "rangeTiersOps": [
+    150
+   ],
+   "headMultiplierOps": 2.5
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x54R;初速650;爆头倍率2.5;旧版伤害55->当前60"
+ },
+ {
+  "name": "R93狙击步枪",
+  "fireModes": [
+   "直拉栓动"
+  ],
+  "rpm": 56,
+  "mag": 10,
+  "damageOps": 61,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 550,
+   "armorDamageOps": 58,
+   "rangeTiersOps": [
+    150
+   ],
+   "headMultiplierOps": 2.5
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速550;爆头倍率2.5;旧版伤害55->当前61"
+ },
+ {
+  "name": "M700狙击步枪",
+  "fireModes": [
+   "栓动"
+  ],
+  "rpm": 48,
+  "mag": 5,
+  "damageOps": 61,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "7.62x51mm",
+   "muzzleVelocityOps": 650,
+   "armorDamageOps": 58,
+   "rangeTiersOps": [
+    150
+   ],
+   "headMultiplierOps": 2.5
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "7.62x51;初速650;爆头倍率2.5;旧版伤害55->当前61"
+ },
+ {
+  "name": "AWM狙击步枪",
+  "fireModes": [
+   "栓动"
+  ],
+  "rpm": 31,
+  "mag": 5,
+  "damageOps": 100,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": ".338 Lap Mag",
+   "muzzleVelocityOps": 975,
+   "armorDamageOps": 10,
+   "rangeTiersOps": [
+    260
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": ".338 Lapua Magnum;初速975(萌百记最高约1200m/s,以dfttk 975为准,存疑);旧版射速35->当前31"
+ },
+ {
+  "name": "M82狙击步枪(半自动反器材步枪)",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 100,
+  "mag": null,
+  "damageOps": 100,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": ".50 BMG",
+   "muzzleVelocityOps": 525,
+   "armorDamageOps": 20,
+   "rangeTiersOps": [
+    200
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": ".50BMG;初速525;S9赛季新枪,烽火可对载具造成伤害;弹匣容量未查到(现实原型10发,巴哈姆特转述公告疑提及20发,归属不明,故留空);dfttk战场数据未收录"
+ },
+ {
+  "name": "725双管霰弹枪",
+  "fireModes": [
+   "双管单发"
+  ],
+  "rpm": 372,
+  "mag": 2,
+  "damageOps": 120,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "12Gauge",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 128,
+   "rangeTiersOps": [
+    12
+   ]
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": "12Gauge;伤害为全弹丸合计(dfttk口径);dfttk未给出部位倍率"
+ },
+ {
+  "name": "M870霰弹枪",
+  "fireModes": [
+   "泵动"
+  ],
+  "rpm": 74,
+  "mag": 6,
+  "damageOps": 136,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "12Gauge",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 128,
+   "rangeTiersOps": [
+    12
+   ]
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "12Gauge,8弹丸;伤害为8弹丸合计;旧版每弹丸14(bittopup,合计112)与当前合计136存在版本/口径差异,存疑"
+ },
+ {
+  "name": "S12K霰弹枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 259,
+  "mag": 5,
+  "damageOps": 104,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "12Gauge",
+   "muzzleVelocityOps": 300,
+   "armorDamageOps": 128,
+   "rangeTiersOps": [
+    10
+   ]
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "12Gauge,8弹丸;合计104约为每弹丸13(与bittopup一致);装撞火枪托可全自动(萌百)"
+ },
+ {
+  "name": "M1014霰弹枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 261,
+  "mag": 7,
+  "damageOps": 112,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "12Gauge",
+   "muzzleVelocityOps": 450,
+   "armorDamageOps": 128,
+   "rangeTiersOps": [
+    12
+   ]
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "12Gauge,8弹丸;合计112=每弹丸14(与bittopup完全一致)"
+ },
+ {
+  "name": "FS12霰弹枪",
+  "fireModes": [
+   "泵动",
+   "半自动"
+  ],
+  "rpm": null,
+  "mag": 6,
+  "damageOps": null,
+  "damageWarfare": null,
+  "extra": {},
+  "sources": [
+   "https://www.taptap.cn/moment/774407533556140443",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "low",
+  "notes": "12Gauge;S8/S9赛季新枪;烽火伤害未查到(dfttk未收录);战场基础伤害18/优势射程12米(TapTap攻略,单发口径存疑);S9削弱半自动散布"
+ },
+ {
+  "name": "G17手枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 462,
+  "mag": 17,
+  "damageOps": 27,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 25,
+   "rangeTiersOps": [
+    27,
+    54,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "初速400"
+ },
+ {
+  "name": "QSZ-92G手枪(九二式改进型)",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 375,
+  "mag": 15,
+  "damageOps": 34,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 32,
+   "rangeTiersOps": [
+    27,
+    54,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x19;初速400"
+ },
+ {
+  "name": "沙漠之鹰手枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 207,
+  "mag": 7,
+  "damageOps": 50,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": ".50AE",
+   "muzzleVelocityOps": 340,
+   "armorDamageOps": 53,
+   "rangeTiersOps": [
+    15,
+    30,
+    999
+   ],
+   "headMultiplierOps": 2.8
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": ".50AE;初速340"
+ },
+ {
+  "name": "93R手枪",
+  "fireModes": [
+   "三连发"
+  ],
+  "rpm": 672,
+  "mag": 12,
+  "damageOps": 34,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 32,
+   "rangeTiersOps": [
+    22,
+    45,
+    999
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x19;初速400;萌百:S11可改全自动;可能另有单发档(未证实)"
+ },
+ {
+  "name": "G18手枪",
+  "fireModes": [
+   "全自动"
+  ],
+  "rpm": 1172,
+  "mag": 17,
+  "damageOps": 23,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": "9x19mm",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 16,
+   "rangeTiersOps": [
+    10,
+    20,
+    30
+   ],
+   "headMultiplierOps": 1.9
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": "9x19;初速400;全游戏最高射速1172;旧版伤害22->当前23"
+ },
+ {
+  "name": ".357左轮手枪",
+  "fireModes": [
+   "半自动(双动)"
+  ],
+  "rpm": 182,
+  "mag": 6,
+  "damageOps": 56,
+  "damageWarfare": null,
+  "extra": {
+   "caliber": ".357 Magnum",
+   "muzzleVelocityOps": 340,
+   "armorDamageOps": 39,
+   "rangeTiersOps": [
+    35,
+    999
+   ],
+   "headMultiplierOps": 2.2,
+   "triggerDelayMs": 100
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "high",
+  "notes": ".357 Magnum;初速340;扳机延迟0.1秒(萌百+dfttk双确认)"
+ },
+ {
+  "name": "M1911手枪",
+  "fireModes": [
+   "半自动"
+  ],
+  "rpm": 373,
+  "mag": 7,
+  "damageOps": 40,
+  "damageWarfare": 25,
+  "extra": {
+   "caliber": ".45ACP(dfttk口径字段误标9x19,实为.45ACP)",
+   "muzzleVelocityOps": 400,
+   "armorDamageOps": 30,
+   "rangeTiersOps": [
+    15,
+    25,
+    35
+   ],
+   "headMultiplierOps": 1.9,
+   "muzzleVelocityWarfare": 550
+  },
+  "sources": [
+   "https://dfttk.com/data/firefight/weapons.json",
+   "https://dfttk.com/data/battlefield/weapons.json",
+   "https://wiki.bittopup.com/deltaforce/guns",
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "medium",
+  "notes": ".45ACP(萌百/现实口径);初速400;dfttk该枪口径字段在烽火/战场两份JSON中均误标为9x19,已按萌百修正;战场条目另有rpm706异常,战场伤害25仅供参考"
+ },
+ {
+  "name": "复合弓",
+  "fireModes": [
+   "单发(拉弓)"
+  ],
+  "rpm": null,
+  "mag": 1,
+  "damageOps": null,
+  "damageWarfare": null,
+  "extra": {},
+  "sources": [
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+  ],
+  "confidence": "low",
+  "notes": "特殊武器;比枪械更安静;无面板数值"
+ }
+]

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d10" />
+  <title>洲一把 - 三角洲行动干员/武器猜测游戏</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 开始页:模式选择 -->
+  <div id="start-screen" class="screen">
+    <div class="hero">
+      <span class="kicker">三角洲行动 // 猜干员 · 猜武器</span>
+      <h1>洲一把</h1>
+      <p class="subtitle">根据逐属性颜色反馈,在限定次数内猜出目标干员或武器</p>
+      <div class="mode-grid">
+        <button id="mode-operator" class="mode-card" type="button" aria-pressed="false">
+          <span class="mode-title">▲ 猜干员</span>
+          <span class="mode-desc">阵营 / 职业 / 性别 / 身高 / 年龄,6 次机会</span>
+          <span class="mode-count" id="operator-count">干员数据待填充</span>
+        </button>
+        <div class="mode-card mode-card-weapon" id="mode-weapon" role="button" tabindex="0" aria-pressed="false" aria-label="猜武器,点击选中后选择子模式">
+          <span class="mode-title">◆ 猜武器</span>
+          <span class="mode-desc">类型 / 口径 / 射击模式 / 伤害 / 射速 / 弹匣,8 次机会</span>
+          <span class="weapon-sub">
+            <button id="mode-weapon-ops" class="btn btn-submode" type="button" disabled>烽火地带</button>
+            <button id="mode-weapon-warfare" class="btn btn-submode" type="button" disabled>全面战场</button>
+          </span>
+          <span class="mode-count" id="weapon-count">武器数据待填充</span>
+        </div>
+      </div>
+      <button id="start-btn" class="btn btn-green btn-lg" type="button" disabled>请先选择模式</button>
+      <button id="rules-trigger" class="link-btn">游戏规则</button>
+    </div>
+    <div class="footer">
+      <span class="footer-links">
+        <a href="https://space.bilibili.com/18689385" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Bilibili">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 2.5 3M16 3l-2.5 3"/><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M8 12v2M16 12v2"/></svg>
+          Bilibili
+        </a>
+        <a href="https://github.com/Rainfall66/zhouyiba" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="项目仓库">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          项目地址
+        </a>
+        <a href="https://df.qq.com/" target="_blank" rel="noopener noreferrer" class="footer-link">数据来源:三角洲行动官网</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- 游戏页 -->
+  <div id="game-screen" class="screen hidden">
+    <div class="topbar">
+      <span class="brand-wrap">
+        <span class="brand">洲一把</span>
+        <span id="mode-tag" class="mode-tag"></span>
+      </span>
+      <span class="actions">
+        <button id="restart-btn" class="btn">重新开始</button>
+        <button id="giveup-btn" class="btn btn-warning">查看答案</button>
+        <button id="back-btn" class="btn">返回首页</button>
+      </span>
+    </div>
+    <div class="game-wrap">
+      <div class="status-line">
+        <span id="progress" class="progress-dots"></span>
+        <span style="color:var(--border)">|</span>
+        <span id="mode-tag-mobile" class="mode-tag mode-tag-mobile"></span>
+        <span id="status-text">准备中…</span>
+      </div>
+      <div class="table-wrap">
+        <table class="board" id="board">
+          <thead id="board-head"></thead>
+          <tbody id="board-body"></tbody>
+        </table>
+      </div>
+      <div class="legend">
+        <span><i class="legend-correct"></i>命中</span>
+        <span><i class="legend-close"></i>接近</span>
+        <span><i class="legend-wrong"></i>不匹配</span>
+      </div>
+      <div class="input-dock">
+        <div class="autocomplete">
+          <ul id="suggestions" class="suggestions"></ul>
+        </div>
+        <div class="input-bar">
+          <input id="guess-input" type="text" placeholder="输入名称..." autocomplete="off" disabled />
+          <button id="guess-submit" class="btn btn-green" disabled>提交猜测</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 结算弹窗 -->
+  <div id="result-overlay" class="overlay">
+    <div id="result-tone" class="overlay-card">
+      <h2 id="result-title"></h2>
+      <p class="muted" id="result-stats"></p>
+      <div class="answer-name" id="result-name"></div>
+      <div id="result-portrait-wrap" class="result-portrait-wrap hidden">
+        <img id="result-portrait" class="result-portrait" alt="" />
+      </div>
+      <table class="info-table" id="result-info"></table>
+      <div class="overlay-actions">
+        <button id="again-btn" class="btn btn-green">再来一把</button>
+        <button id="view-btn" class="btn">查看对局</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 规则弹窗 -->
+  <div id="rules-overlay" class="overlay">
+    <div class="overlay-card">
+      <button id="rules-close" class="rule-close" aria-label="关闭">×</button>
+      <h2>游戏规则</h2>
+      <div class="rules-body">
+        <p>系统随机选一个目标,你输入名称,每次猜测会新增一行,逐属性给出反馈。</p>
+        <div class="rules-mode" data-mode="operator" hidden>
+          <h3>反馈颜色(猜干员)</h3>
+          <ul>
+            <li><b style="color:var(--correct)">绿色(命中)</b> —— 阵营 / 职业 / 性别与答案相同;身高 / 年龄与答案<b>完全一致</b></li>
+            <li><b style="color:var(--close)">黄色(接近)</b> —— 身高相差 3cm 以内、年龄相差 1 岁以内(都会附 ▲▼ 箭头)</li>
+            <li><b style="color:var(--text-light)">灰色</b> —— 与答案不同,或该属性为未知("-")</li>
+            <li><b>箭头</b> —— ▲ 表示答案的数值更高,▼ 表示更低</li>
+          </ul>
+          <h3>属性说明</h3>
+          <ul>
+            <li><b>阵营</b>:GTI / 哈夫克 / 无(无名无阵营);<b>职业</b>:突击 / 工程 / 支援 / 侦察;<b>性别</b>:男 / 女</li>
+            <li><b>身高 / 年龄</b>:官方档案数值(未公布的按未知处理)</li>
+            <li><b>登场赛季 / 本名 / 称号 / CV 等档案</b>:不上棋盘,结算时展示</li>
+            <li><b>拼音联想</b>:输入全拼或首字母也能找到干员(如 <code>hl</code> → 红狼),或直接输入英文代号(如 D-Wolf)。拼音仅用于联想,需<b>点选候选项</b>后再提交</li>
+          </ul>
+          <h3>胜负</h3>
+          <p>干员名猜对即胜;6 次仍未猜中或主动查看答案则失败。</p>
+        </div>
+        <div class="rules-mode" data-mode="weapon" hidden>
+          <h3>反馈颜色(猜武器)</h3>
+          <ul>
+            <li><b style="color:var(--correct)">绿色(命中)</b> —— 类型 / 口径与答案相同;射击模式与答案<b>完全一致</b>;伤害 / 射速 / 弹匣与答案<b>完全一致</b></li>
+            <li><b style="color:var(--close)">黄色(接近)</b> —— 射击模式与答案<b>有共同项</b>(如答案是「全自动/单发」,你猜「全自动/两连发」);伤害相差 2 以内、射速相差 30 RPM 以内、弹匣相差 5 发以内(数值附 ▲▼ 箭头)</li>
+            <li><b style="color:var(--text-light)">灰色</b> —— 与答案不同,或该属性为未知("-")</li>
+            <li><b>箭头</b> —— ▲ 表示答案的数值更高,▼ 表示更低</li>
+          </ul>
+          <h3>属性说明</h3>
+          <ul>
+            <li><b>两个卡池</b>:烽火地带 / 全面战场 各自独立抽答案;伤害按所选模式取值(同一把武器在两个模式数值可能不同)</li>
+            <li><b>类型</b>:突击步枪 / 冲锋枪 / 机枪 / 狙击枪 / 射手步枪 / 霰弹枪 / 手枪</li>
+            <li><b>口径</b>:如 5.56×45mm / 7.62×39mm / 9×19mm / 12Gauge 等</li>
+            <li><b>伤害 / 射速 / 弹匣</b>:基础数值(默认弹匣,不含配件)</li>
+            <li><b>霰弹枪伤害</b>:棋盘显示「单弹丸×弹丸数」(如 14×8),命中判定按总伤比对;FS12 有泵动/半自动两档数值,按半自动档记录(见结算页备注)</li>
+            <li><b>拼音联想</b>:输入全拼或首字母也能找到武器,需<b>点选候选项</b>后再提交</li>
+          </ul>
+          <h3>胜负</h3>
+          <p>武器名猜对即胜;8 次仍未猜中或主动查看答案则失败。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="operators.js"></script>
+  <script src="weapons.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
