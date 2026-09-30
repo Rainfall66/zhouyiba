@@ -102,6 +102,12 @@ var CORRECTIONS = {
 var SHOTGUN_PELLETS = 8;
 var NO_PELLET_DETAIL = ['725双管霰弹枪'];
 
+// 「全面战场沿用烽火数值」白名单(需有明确依据才可加入;留空 = 全部按未知处理)。
+// 语义:战场伤害 null 且不在本名单 → 棋盘显示未知「-」,不参与近似判定。
+// 2026-09-30 核查:原始调研 68 条里**没有**任何一条 damageWarfare === damageOps,
+// 因此旧版「留空 = 与烽火相同」的默认行为已撤销(那会把 25 把未收录的枪显示成实测值)。
+var SAME_AS_OPS = [];
+
 // 模式归属:全部两模式通用。复合弓在全面战场为突击兵/侦察兵的特殊武器(玩家核实,2026-09-29)。
 // 曾据爆料收录的蜜罐/蝎式/98K/AA-12 经玩家核实**不存在于游戏**(S11 爆料文疑似 AI 乱纹),已剔除。
 
@@ -142,6 +148,7 @@ raw.forEach(function (w) {
     射击模式: fireModes,
     伤害: w.damageOps,
     战场伤害: w.damageWarfare,
+    战场伤害同烽火: SAME_AS_OPS.indexOf(w.name) !== -1,
     射速: w.rpm,
     弹匣: w.mag,
     备注: NOTES[w.name] || '',
@@ -163,7 +170,7 @@ raw.forEach(function (w) {
 records.forEach(function (r, i) { r.id = i + 1; r['可用'] = true; r.avatar = ''; r.images = []; });
 
 // ---------- 输出 ----------
-var FIELDS = ['nickname', 'alias', '可用', '模式', '类型', '口径', '射击模式', '伤害', '战场伤害', '射速', '弹匣', '伤害明细', '备注', 'pinyin', 'pinyinAbbr'];
+var FIELDS = ['nickname', 'alias', '可用', '模式', '类型', '口径', '射击模式', '伤害', '战场伤害', '战场伤害同烽火', '射速', '弹匣', '伤害明细', '备注', 'pinyin', 'pinyinAbbr'];
 var IMG = require('./image_map.js');
 var js = '// 洲一把 · 三角洲行动武器数据库(由数据流水线 pipeline/gen_weapons.js 生成,可手改但会在下次生成时被覆盖)\n' +
   '// 数值核心源:dfttk.com 双模式数据文件(firefight=烽火地带 / battlefield=全面战场),伤害两模式独立;\n' +
@@ -174,7 +181,10 @@ var js = '// 洲一把 · 三角洲行动武器数据库(由数据流水线 pipe
   '//   模式 "通用"=两模式卡池都有;"仅烽火地带"=只进烽火地带卡池\n' +
   '//   类型 突击步枪/冲锋枪/机枪/狙击枪/射手步枪/霰弹枪/手枪/特殊武器(精确匹配)\n' +
   '//   口径 如 5.56×45mm / 12Gauge(精确匹配) / 射击模式 数组(集合匹配:完全一致绿,有共同项黄)\n' +
-  '//   伤害 烽火地带基础伤害 / 战场伤害 全面战场基础伤害(留空=与伤害相同)(数值列,±2 判「接近」+▲▼)\n' +
+  '//   伤害 烽火地带基础伤害 / 战场伤害 全面战场基础伤害(数值列,±2 判「接近」+▲▼)\n' +
+  '//   战场伤害 null = 该模式数值未收录 → 棋盘按未知「-」处理,不参与判定(2026-09-30 修订);\n' +
+  '//   战场伤害同烽火 true = 已确认两模式数值相同(此时取「伤害」值),默认 false;\n' +
+  '//   原始调研 68 条中没有任何一条 damageWarfare === damageOps,故不再默认「留空=相同」\n' +
   '//   伤害明细 霰弹枪面板显示「单弹丸×弹丸数」(如 14×8);比对仍按「伤害」总伤进行,非霰弹枪无此字段\n' +
   '//   射速 RPM(±30) / 弹匣 基础弹匣容量(±5)\n' +
   '//   备注 结算页展示 / pinyin·pinyinAbbr 拼音联想(仅联想,不可直接提交)\n' +
@@ -197,3 +207,7 @@ var wf = records.filter(function (r) { return r.模式 !== '仅烽火地带'; })
 console.log('ops pool:', ops, '/ warfare pool:', wf);
 var noStats = records.filter(function (r) { return r.伤害 == null; }).map(function (r) { return r.nickname; });
 console.log('no damage stat:', noStats.join(', ') || '(none)');
+var unknownWarfare = records.filter(function (r) { return r.战场伤害 == null && r.战场伤害同烽火 !== true; });
+console.log('战场伤害未收录(棋盘按未知处理):', unknownWarfare.length, '把 →', unknownWarfare.map(function (r) { return r.nickname; }).join(', ') || '(none)');
+var sameAsOps = records.filter(function (r) { return r.战场伤害同烽火 === true; });
+console.log('战场伤害同烽火(显式声明相同):', sameAsOps.length, '把');

@@ -48,6 +48,28 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* 通用:元素级隐藏(覆盖各组件自己的 display 值) */
+.hidden { display: none !important; }
+
+/* 仅屏幕阅读器可见(表格 caption / 复制用的临时文本域) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 键盘可见焦点:鼠标点击不出现描边,键盘操作有明确的军械橙描边 */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
 
 body {
@@ -256,6 +278,21 @@ button, a { touch-action: manipulation; }
   color: inherit;
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
+/* 卡片内的「选择」是一个真正的 button(点击区含标题与描述),子模式是独立的 radiogroup */
+.mode-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+}
 .mode-card:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); }
 .mode-card-weapon { cursor: pointer; }
 /* 选模式交互:选中卡片军械橙高亮;猜武器的子模式选中态为实心橙 */
@@ -301,6 +338,40 @@ button, a { touch-action: manipulation; }
 }
 .btn-submode.selected:hover:not(:disabled) { background: var(--primary-hover); color: #0b0d10; }
 .hero .link-btn { margin-top: 10px; }
+/* 开始页:每日一题开关 / 开局与续玩按钮 / 战绩行 */
+.daily-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card-soft);
+  color: var(--text-sec);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.daily-toggle:hover { border-color: var(--border-strong); color: var(--text); }
+.daily-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+.daily-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.3; }
+.daily-text small { color: var(--text-light); font-size: 0.72rem; }
+.start-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.start-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+.link-btn-sm { margin-top: 0; font-size: 0.78rem; }
 .footer { text-align: center; color: var(--text-light); font-size: 0.78rem; padding: 16px; }
 .footer-links {
   display: inline-flex;
@@ -332,10 +403,13 @@ button, a { touch-action: manipulation; }
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
   padding: 10px 4px;
   color: var(--text-sec);
   font-size: 0.85rem;
 }
+.status-line .sep { color: var(--border); }
+.status-text { min-width: 0; }
 /* 进度标记:小三角(Δ 计数) */
 .progress-dots { display: inline-flex; align-items: center; gap: 4px; }
 .progress-dots i {
@@ -468,7 +542,10 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
 }
 .suggestions li.active, .suggestions li:hover { background: var(--primary-soft); color: var(--primary-hover); }
 
-.empty-hint { color: var(--text-light); text-align: center; padding: 60px 16px; }
+/* 规则正文里的强调色(不用内联 style,便于将来启用 CSP) */
+.rules-body .c-correct { color: var(--correct); }
+.rules-body .c-close { color: var(--close); }
+.rules-body .c-muted { color: var(--text-light); }
 
 /* ---------- 弹窗 ---------- */
 .overlay {
@@ -509,14 +586,17 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
 .info-table td { padding: 8px 6px; border-bottom: 1px solid var(--border); }
 .info-table td.label { color: var(--text-light); width: 40%; }
 .muted { color: var(--text-light); font-size: 0.85rem; margin: 8px 0; }
-.overlay-actions { display: flex; gap: 8px; margin-top: 18px; }
-.overlay-actions .btn { flex: 1; }
+.overlay-actions { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.overlay-actions .btn { flex: 1; min-width: 120px; }
 
 /* 规则 */
 .rules-body { font-size: 0.9rem; line-height: 1.75; color: var(--text-sec); }
 .rules-body h3 { color: var(--text); margin: 14px 0 6px; font-size: 0.95rem; }
 .rules-body ul { padding-left: 18px; }
 .rules-body li { margin: 3px 0; }
+/* 两个模式块同时出现时(开始页打开规则)用分隔线分开 */
+.rules-general { padding-bottom: 4px; }
+.rules-mode { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--border); }
 .rule-close {
   float: right;
   background: none;
@@ -591,6 +671,21 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
   border: 1px solid var(--border);
 }
 
+/* 武器图标是官方 2:1 横版产品图(512×256,透明底),不能像头像那样方形 cover 裁切
+ * —— 那只会露出枪身中段。这里改成 2:1 缩略框 + contain,完整显示整把枪。 */
+table.board[data-mode="weapon"] .row-avatar,
+.sug-avatar-weapon {
+  width: 46px;
+  height: 23px;
+  margin-right: 6px;
+  border-radius: 2px;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+}
+table.board[data-mode="weapon"] .row-avatar { vertical-align: -7px; }
+
 .result-portrait-wrap {
   display: flex;
   justify-content: center;
@@ -606,6 +701,13 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
   border-radius: 6px;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.01));
+}
+/* 武器结算图:官方图标是 2:1 横版,给更宽的框并保持等比(不再只显示枪身中段) */
+.result-portrait-weapon {
+  max-width: min(100%, 320px);
+  max-height: 170px;
+  padding: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
 }
 
 /* ---------- 手机端 ---------- */
@@ -629,7 +731,7 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
 
   .btn { min-height: 40px; padding: 9px 14px; }
   .btn-lg { min-height: 44px; padding: 11px 19px; }
-  .input-bar .input { min-height: 46px; font-size: 1rem; padding: 10px 12px; }
+  .input-bar input { min-height: 46px; font-size: 1rem; padding: 10px 12px; }
   .input-bar .btn { min-height: 46px; padding-inline: 14px; }
 
   .status-line { padding: 8px 4px; font-size: 0.8rem; }
@@ -677,6 +779,15 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
   /* 模式选择卡窄屏改单列 */
   .mode-grid { grid-template-columns: 1fr; }
   .mode-card { padding: 18px 14px 14px; }
+  /* 开始页新增区块在窄屏的收敛 */
+  .daily-toggle { width: 100%; justify-content: center; }
+  .daily-text { align-items: center; }
+  .start-actions { flex-direction: column; }
+  .start-actions .btn { width: 100%; }
+  #start-btn { margin-top: 0; min-width: 0; }
+  .start-stats { font-size: 0.74rem; }
+  /* 三个结算按钮在窄屏已经是竖向排列,去掉最小宽度约束 */
+  .overlay-actions .btn { min-width: 0; }
   /* 窄屏顶栏空间有限,模式标签移到状态行显示 */
   .mode-tag { display: none; }
   .mode-tag-mobile { display: inline-flex; }
@@ -707,7 +818,12 @@ table.board[data-mode="weapon"] th:nth-child(7), table.board[data-mode="weapon"]
 
   .row-avatar { width: 20px; height: 20px; margin-right: 4px; vertical-align: -6px; }
   .sug-avatar { width: 22px; height: 22px; }
+  /* 武器图标在窄屏用更小的 2:1 缩略框,避免挤掉武器名 */
+  table.board[data-mode="weapon"] .row-avatar,
+  .sug-avatar-weapon { width: 34px; height: 17px; margin-right: 3px; }
+  table.board[data-mode="weapon"] .row-avatar { vertical-align: -5px; }
   .result-portrait { max-width: min(100%, 168px); max-height: 168px; border-radius: 4px; }
+  .result-portrait-weapon { max-width: min(100%, 250px); max-height: 130px; }
 
   .footer { font-size: 0.7rem; padding: 10px; }
 }

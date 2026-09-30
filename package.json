@@ -1,0 +1,13 @@
+{
+  "name": "zhouyiba",
+  "version": "1.1.0",
+  "private": true,
+  "description": "洲一把 · 三角洲行动干员/武器猜测游戏(纯静态单机版,零运行时依赖)",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "test": "node --test",
+    "test:core": "node test/core.test.js",
+    "smoke": "node test/smoke.js",
+    "gen:weapons": "node pipeline/gen_weapons.js"
+  }
+}

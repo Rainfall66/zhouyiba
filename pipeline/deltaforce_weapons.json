@@ -1172,7 +1172,9 @@
   "rpm": 249,
   "mag": 10,
   "damageOps": 50,
-  "damageWarfare": null,
+  "damageWarfare": 35,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x51mm",
    "muzzleVelocityOps": 750,
@@ -1186,10 +1188,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x51;初速750;旧版射速300->当前249(DMR射速调整)"
+  "notes": "7.62x51;初速750;旧版射速300->当前249(DMR射速调整); 战场伤害 35 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "SR9射手步枪",
@@ -1199,7 +1204,9 @@
   "rpm": 240,
   "mag": 10,
   "damageOps": 50,
-  "damageWarfare": null,
+  "damageWarfare": 35,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x51mm",
    "muzzleVelocityOps": 750,
@@ -1212,10 +1219,13 @@
   },
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x51;初速750"
+  "notes": "7.62x51;初速750; 战场伤害 35 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "SR-25射手步枪",
@@ -1225,7 +1235,9 @@
   "rpm": 303,
   "mag": 10,
   "damageOps": 50,
-  "damageWarfare": null,
+  "damageWarfare": 35,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x51mm",
    "muzzleVelocityOps": 550,
@@ -1239,10 +1251,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x51;初速550;瞬息短枪管变体烽火dmg55/rpm364;旧版射速364->当前303"
+  "notes": "7.62x51;初速550;瞬息短枪管变体烽火dmg55/rpm364;旧版射速364->当前303; 战场伤害 35 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "SKS射手步枪",
@@ -1252,7 +1267,9 @@
   "rpm": 411,
   "mag": 10,
   "damageOps": 48,
-  "damageWarfare": null,
+  "damageWarfare": 27,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium",
   "extra": {
    "caliber": "7.62x39mm",
    "muzzleVelocityOps": 575,
@@ -1267,10 +1284,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "medium",
-  "notes": "7.62x39;初速575;固定10发弹仓;旧版伤害44/射速510->当前48/411(版本调整,萌百2025-06仍记载510)"
+  "notes": "7.62x39;初速575;固定10发弹仓;旧版伤害44/射速510->当前48/411(版本调整,萌百2025-06仍记载510); 战场伤害 27 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),2024 年数据表为 26(版本差异,以新数据为准)"
  },
  {
   "name": "M14战斗射手步枪",
@@ -1311,7 +1331,9 @@
   "rpm": 261,
   "mag": 10,
   "damageOps": 56,
-  "damageWarfare": null,
+  "damageWarfare": 40,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x54R",
    "muzzleVelocityOps": 500,
@@ -1326,10 +1348,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x54R;初速500;爆头倍率2.32;旧版射速300->当前261"
+  "notes": "7.62x54R;初速500;爆头倍率2.32;旧版射速300->当前261; 战场伤害 40 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "VSS射手步枪",
@@ -1340,7 +1365,9 @@
   "rpm": 480,
   "mag": 15,
   "damageOps": 40,
-  "damageWarfare": null,
+  "damageWarfare": 33,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "9x39mm",
    "muzzleVelocityOps": 330,
@@ -1354,10 +1381,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "9x39亚音速,初速330;萌百明确半自动+全自动双模式;旧版伤害35->当前40"
+  "notes": "9x39亚音速,初速330;萌百明确半自动+全自动双模式;旧版伤害35->当前40; 战场伤害 33 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "Mini-14射手步枪",
@@ -1367,7 +1397,9 @@
   "rpm": 475,
   "mag": 10,
   "damageOps": 34,
-  "damageWarfare": null,
+  "damageWarfare": 25,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "5.56x45mm",
    "muzzleVelocityOps": 650,
@@ -1381,10 +1413,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "5.56x45;初速650;旧版伤害32/射速590->当前34/475"
+  "notes": "5.56x45;初速650;旧版伤害32/射速590->当前34/475; 战场伤害 25 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "Marlin杠杆步枪",
@@ -1449,7 +1484,9 @@
   "rpm": 44,
   "mag": 7,
   "damageOps": 60,
-  "damageWarfare": null,
+  "damageWarfare": 76,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x54R",
    "muzzleVelocityOps": 650,
@@ -1462,10 +1499,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x54R;初速650;爆头倍率2.5;旧版伤害55->当前60"
+  "notes": "7.62x54R;初速650;爆头倍率2.5;旧版伤害55->当前60; 战场伤害 76 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "R93狙击步枪",
@@ -1475,7 +1515,9 @@
   "rpm": 56,
   "mag": 10,
   "damageOps": 61,
-  "damageWarfare": null,
+  "damageWarfare": 74,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x51mm",
    "muzzleVelocityOps": 550,
@@ -1488,10 +1530,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x51;初速550;爆头倍率2.5;旧版伤害55->当前61"
+  "notes": "7.62x51;初速550;爆头倍率2.5;旧版伤害55->当前61; 战场伤害 74 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "M700狙击步枪",
@@ -1501,7 +1546,9 @@
   "rpm": 48,
   "mag": 5,
   "damageOps": 61,
-  "damageWarfare": null,
+  "damageWarfare": 72,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "7.62x51mm",
    "muzzleVelocityOps": 650,
@@ -1514,10 +1561,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "7.62x51;初速650;爆头倍率2.5;旧版伤害55->当前61"
+  "notes": "7.62x51;初速650;爆头倍率2.5;旧版伤害55->当前61; 战场伤害 72 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "AWM狙击步枪",
@@ -1527,7 +1577,9 @@
   "rpm": 31,
   "mag": 5,
   "damageOps": 100,
-  "damageWarfare": null,
+  "damageWarfare": 100,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium",
   "extra": {
    "caliber": ".338 Lap Mag",
    "muzzleVelocityOps": 975,
@@ -1540,10 +1592,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": ".338 Lapua Magnum;初速975(萌百记最高约1200m/s,以dfttk 975为准,存疑);旧版射速35->当前31"
+  "notes": ".338 Lapua Magnum;初速975(萌百记最高约1200m/s,以dfttk 975为准,存疑);旧版射速35->当前31; 战场伤害 100 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),2024 年数据表为 85(版本差异,以新数据为准)"
  },
  {
   "name": "M82狙击步枪(半自动反器材步枪)",
@@ -1692,7 +1747,9 @@
   "rpm": 462,
   "mag": 17,
   "damageOps": 27,
-  "damageWarfare": null,
+  "damageWarfare": 33,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "9x19mm",
    "muzzleVelocityOps": 400,
@@ -1707,10 +1764,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "初速400"
+  "notes": "初速400; 战场伤害 33 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "QSZ-92G手枪(九二式改进型)",
@@ -1720,7 +1780,9 @@
   "rpm": 375,
   "mag": 15,
   "damageOps": 34,
-  "damageWarfare": null,
+  "damageWarfare": 34,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "9x19mm",
    "muzzleVelocityOps": 400,
@@ -1735,10 +1797,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "9x19;初速400"
+  "notes": "9x19;初速400; 战场伤害 34 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "沙漠之鹰手枪",
@@ -1748,7 +1813,9 @@
   "rpm": 207,
   "mag": 7,
   "damageOps": 50,
-  "damageWarfare": null,
+  "damageWarfare": 50,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": ".50AE",
    "muzzleVelocityOps": 340,
@@ -1763,10 +1830,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": ".50AE;初速340"
+  "notes": ".50AE;初速340; 战场伤害 50 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "93R手枪",
@@ -1804,7 +1874,9 @@
   "rpm": 1172,
   "mag": 17,
   "damageOps": 23,
-  "damageWarfare": null,
+  "damageWarfare": 14,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": "9x19mm",
    "muzzleVelocityOps": 400,
@@ -1819,10 +1891,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": "9x19;初速400;全游戏最高射速1172;旧版伤害22->当前23"
+  "notes": "9x19;初速400;全游戏最高射速1172;旧版伤害22->当前23; 战场伤害 14 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": ".357左轮手枪",
@@ -1832,7 +1907,9 @@
   "rpm": 182,
   "mag": 6,
   "damageOps": 56,
-  "damageWarfare": null,
+  "damageWarfare": 52,
+  "warfareSource": "delta-force-plugin/resources/data/weapons_mp.json",
+  "warfareConfidence": "medium-high",
   "extra": {
    "caliber": ".357 Magnum",
    "muzzleVelocityOps": 340,
@@ -1847,10 +1924,13 @@
   "sources": [
    "https://dfttk.com/data/firefight/weapons.json",
    "https://wiki.bittopup.com/deltaforce/guns",
-   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6"
+   "https://zh.moegirl.org.cn/zh-cn/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8/%E6%AD%A6%E5%99%A8%E4%B8%8E%E9%85%8D%E4%BB%B6",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/weapons_mp.json",
+   "https://raw.githubusercontent.com/Entropy-Increase-Team/delta-force-plugin/main/resources/data/battlefield_weapons.json",
+   "https://palygamer.com/delta-force-weapon-range/"
   ],
   "confidence": "high",
-  "notes": ".357 Magnum;初速340;扳机延迟0.1秒(萌百+dfttk双确认)"
+  "notes": ".357 Magnum;初速340;扳机延迟0.1秒(萌百+dfttk双确认); 战场伤害 52 取自社区计算器数据集(2026-09-30 抓取,尚未游戏内实测),与 2024 年全面战场数据表一致"
  },
  {
   "name": "M1911手枪",

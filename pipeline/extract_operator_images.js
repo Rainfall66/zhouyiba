@@ -8,8 +8,12 @@ var pages = {
   bite: '比特', die: '蝶', huixiang: '回响', yedan: '液氮', lvren: '旅人',
 };
 var out = [], missing = [];
+// 输出文件名用的 slug 修正表(输入页仍是早期缓存的文件名,但产物按正确拼音命名:
+// 骇爪 = haizhua,旧的 huaizhua 只是笔误)
+var OUT_SLUG = { huaizhua: 'haizhua' };
 Object.keys(pages).forEach(function (slug) {
   var name = pages[slug];
+  var outSlug = OUT_SLUG[slug] || slug;
   var html = fs.readFileSync('pipeline/raw_pages/' + slug + '.html', 'utf8');
   var urls = html.match(/https:\/\/storage\.moegirl\.org\.cn\/moegirl\/commons\/[^"'\s\\<>]+/g) || [];
   var seen = {}, icon = null, art = null;
@@ -29,9 +33,9 @@ Object.keys(pages).forEach(function (slug) {
     if (fileSeg === iconFile && !icon) icon = plain;
     if (fileSeg === artFile && !art) art = plain;
   });
-  if (icon) out.push(icon + '|' + 'images/raw/head-' + slug + '.png');
+  if (icon) out.push(icon + '|' + 'images/raw/head-' + outSlug + '.png');
   else missing.push(slug + '(icon)');
-  if (art) out.push(art + '|' + 'images/raw/art-' + slug + '.jpg');
+  if (art) out.push(art + '|' + 'images/raw/art-' + outSlug + '.jpg');
   else missing.push(slug + '(art)');
 });
 fs.writeFileSync('pipeline/dl_operators.txt', out.join('\n') + '\n');
