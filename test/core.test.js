@@ -303,8 +303,11 @@ test('武器数据:字段齐全、类型/射击模式合法、需要开局的列
     assert.ok(Number.isFinite(w.弹匣) && w.弹匣 > 0, `${w.nickname} 弹匣必须是正数`);
     assert.ok(w.战场伤害 === null || Number.isFinite(w.战场伤害), `${w.nickname} 战场伤害必须是数字或 null`);
     assert.equal(typeof w.战场伤害同烽火, 'boolean', `${w.nickname} 缺 战场伤害同烽火 布尔标记`);
-    if (w.战场伤害 === null && w.战场伤害同烽火) {
-      assert.fail(`${w.nickname} 未收录战场伤害却又标注「同烽火」`);
+    // 「战场伤害: null + 同烽火: true」是**合法且有意的**表达(见 core.js damageOf:
+    // 显式声明两模式数值相同,此时取「伤害」值),2026-10-01 FS12 即采用该写法。
+    // 真正矛盾的是:既给了具体战场伤害,又声明「同烽火」(两个源打架,难以裁决)。
+    if (w.战场伤害 !== null && w.战场伤害同烽火) {
+      assert.fail(`${w.nickname} 已给出战场伤害却又标注「同烽火」,语义冲突`);
     }
   }
 });

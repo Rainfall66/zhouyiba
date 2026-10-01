@@ -10,7 +10,8 @@
 //   伤害 烽火地带基础伤害 / 战场伤害 全面战场基础伤害(数值列,±2 判「接近」+▲▼)
 //   战场伤害 null = 该模式数值未收录 → 棋盘按未知「-」处理,不参与判定(2026-09-30 修订);
 //   战场伤害同烽火 true = 已确认两模式数值相同(此时取「伤害」值),默认 false;
-//   原始调研 68 条中没有任何一条 damageWarfare === damageOps,故不再默认「留空=相同」
+//   原始调研 68 条中没有一条 damageWarfare === damageOps,故不默认「留空=相同」;
+//   「同烽火」须显式声明(gen_weapons.js 的 SAME_AS_OPS),当前为 FS12(2026-10-01 玩家确认)
 //   伤害明细 霰弹枪面板显示「单弹丸×弹丸数」(如 14×8);比对仍按「伤害」总伤进行,非霰弹枪无此字段
 //   射速 RPM(±30) / 弹匣 基础弹匣容量(±5)
 //   备注 结算页展示 / pinyin·pinyinAbbr 拼音联想(仅联想,不可直接提交)
@@ -72,12 +73,12 @@ window.ZHOUYIBA_WEAPONS = [
  { id: 52, nickname: "R93", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "7.62×51mm", 射击模式: ["栓动"], 伤害: 61, 战场伤害: 74, 战场伤害同烽火: false, 射速: 56, 弹匣: 10, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-r93.webp", images: [] },
  { id: 53, nickname: "M700", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "7.62×51mm", 射击模式: ["栓动"], 伤害: 61, 战场伤害: 72, 战场伤害同烽火: false, 射速: 48, 弹匣: 5, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-m700.webp", images: [] },
  { id: 54, nickname: "AWM", alias: "", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: ".338 Lapua Magnum", 射击模式: ["栓动"], 伤害: 100, 战场伤害: 100, 战场伤害同烽火: false, 射速: 31, 弹匣: 5, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-awm.webp", images: [] },
- { id: 55, nickname: "M82", alias: "巴雷特", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "12.7×99mm", 射击模式: ["半自动"], 伤害: 100, 战场伤害: null, 战场伤害同烽火: false, 射速: 100, 弹匣: 5, 伤害明细: null, 备注: "全面战场中可伤害载具", pinyin: "", pinyinAbbr: "", avatar: "images/w-m82.webp", images: [] },
+ { id: 55, nickname: "M82", alias: "巴雷特", 可用: true, 模式: "通用", 类型: "狙击枪", 口径: "12.7×99mm", 射击模式: ["半自动"], 伤害: 100, 战场伤害: 100, 战场伤害同烽火: false, 射速: 100, 弹匣: 5, 伤害明细: null, 备注: "全面战场中可伤害载具", pinyin: "", pinyinAbbr: "", avatar: "images/w-m82.webp", images: [] },
  { id: 56, nickname: "725", alias: "双管霰弹枪", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["单发"], 伤害: 120, 战场伤害: null, 战场伤害同烽火: false, 射速: 372, 弹匣: 2, 伤害明细: null, 备注: "伤害为全弹丸合计", pinyin: "", pinyinAbbr: "", avatar: "images/w-725.webp", images: [] },
  { id: 57, nickname: "M870", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["泵动"], 伤害: 136, 战场伤害: null, 战场伤害同烽火: false, 射速: 74, 弹匣: 6, 伤害明细: "17×8", 备注: "伤害为 8 弹丸合计(游戏内面板可能显示每弹丸值)", pinyin: "", pinyinAbbr: "", avatar: "images/w-m870.webp", images: [] },
  { id: 58, nickname: "S12K", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["半自动"], 伤害: 104, 战场伤害: null, 战场伤害同烽火: false, 射速: 259, 弹匣: 5, 伤害明细: "13×8", 备注: "伤害为 8 弹丸合计;撞火枪托可全自动", pinyin: "", pinyinAbbr: "", avatar: "images/w-s12k.webp", images: [] },
  { id: 59, nickname: "M1014", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["半自动"], 伤害: 112, 战场伤害: null, 战场伤害同烽火: false, 射速: 261, 弹匣: 7, 伤害明细: "14×8", 备注: "伤害为 8 弹丸合计", pinyin: "", pinyinAbbr: "", avatar: "images/w-m1014.webp", images: [] },
- { id: 60, nickname: "FS12", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["泵动","半自动"], 伤害: 112, 战场伤害: null, 战场伤害同烽火: false, 射速: 300, 弹匣: 6, 伤害明细: "14×8", 备注: "面板按半自动档记录;泵动模式伤害 18×8(总伤 144)、射速 71", pinyin: "", pinyinAbbr: "", avatar: "", images: [] },
+ { id: 60, nickname: "FS12", alias: "", 可用: true, 模式: "通用", 类型: "霰弹枪", 口径: "12Gauge", 射击模式: ["泵动","半自动"], 伤害: 112, 战场伤害: null, 战场伤害同烽火: true, 射速: 300, 弹匣: 6, 伤害明细: "14×8", 备注: "面板按半自动档记录;泵动模式伤害 18×8(总伤 144)、射速 71;战场伤害与烽火相同", pinyin: "", pinyinAbbr: "", avatar: "", images: [] },
  { id: 61, nickname: "G17", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["半自动"], 伤害: 27, 战场伤害: 33, 战场伤害同烽火: false, 射速: 462, 弹匣: 17, 伤害明细: null, 备注: "", pinyin: "", pinyinAbbr: "", avatar: "images/w-g17.webp", images: [] },
  { id: 62, nickname: "QSZ-92G", alias: "九二式", 可用: true, 模式: "通用", 类型: "手枪", 口径: "9×19mm", 射击模式: ["半自动"], 伤害: 34, 战场伤害: 34, 战场伤害同烽火: false, 射速: 375, 弹匣: 15, 伤害明细: null, 备注: "", pinyin: "qsz92g", pinyinAbbr: "", avatar: "images/w-qsz-92g.webp", images: [] },
  { id: 63, nickname: "沙漠之鹰", alias: "", 可用: true, 模式: "通用", 类型: "手枪", 口径: ".50 AE", 射击模式: ["半自动"], 伤害: 50, 战场伤害: 50, 战场伤害同烽火: false, 射速: 207, 弹匣: 7, 伤害明细: null, 备注: "", pinyin: "shamozhiying", pinyinAbbr: "smzy", avatar: "images/w-shamozhiying.webp", images: [] },

@@ -17,3 +17,7 @@ _orig/
 _dom.txt
 _err.txt
 _edge_profile/
+
+# 审阅表的派生产物(由 node pipeline/make_review.js 生成,可随时重建)
+pipeline/weapons-review.json
+pipeline/weapons-review.xlsx
