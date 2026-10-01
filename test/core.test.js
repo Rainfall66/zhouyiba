@@ -81,8 +81,9 @@ test('damageOf:烽火读伤害;全面战场读战场伤害;未收录返回 null(
 
 test('compare:全面战场未收录的伤害列判灰且无箭头,不产生 green/yellow', () => {
   const cfg = Z.MODES.weapon;
-  const unknown = WEAPONS.find((w) => Z.damageOf(w, 'warfare') === null);
-  assert.ok(unknown, '应存在战场伤害未收录的武器');
+  // 用合成数据构造「未收录」场景:不依赖真实数据恰好留有缺口
+  // (2026-10-01 起 68 把武器的战场伤害已全部收录,真实数据里不再有未收录条目)
+  const unknown = { nickname: 'ZZ未知枪', 伤害: 50, 战场伤害: null, 战场伤害同烽火: false, 类型: '突击步枪' };
   const cell = Z.compare(unknown, unknown, cfg, 'warfare').cells[3];
   assert.equal(cell.value, '', '未知数值渲染成空值(棋盘显示 "-")');
   assert.equal(cell.level, 'wrong');
@@ -110,16 +111,25 @@ test('compare:霰弹枪显示「单弹丸×弹丸数」,判定仍按总伤', () 
   assert.equal(far.value, '17×8', '面板显示猜测方的单弹丸×弹丸数');
   assert.equal(far.level, 'wrong', '136 与 112 相差 24,超出 ±2 容差');
 
-  const same = Z.compare(fs12, m1014, cfg, 'ops').cells[3];
-  assert.equal(same.value, '14×8');
-  assert.equal(same.level, 'correct', '两者总伤都是 112');
+  // FS12 双射击模式:棋盘按半自动档(18×8=144)判定,明细同时展示两档
+  const fs12Cell = Z.compare(fs12, m1014, cfg, 'ops').cells[3];
+  assert.equal(fs12Cell.value, '18×8 / 25×8', 'FS12 明细展示半自动/泵动两档');
+  assert.equal(fs12Cell.level, 'wrong', 'FS12 半自动 144 与 M1014 112 相差 32,超出 ±2 容差');
 });
 
 test('countUnknown:统计卡池里未收录的数值列条目数', () => {
-  const pool = Z.getPool(Z.MODES.weapon, 'warfare');
-  const unknown = Z.countUnknown(Z.MODES.weapon, pool, '伤害', 'warfare');
-  assert.ok(unknown > 0, '全面战场确实存在未收录伤害的武器');
-  assert.equal(Z.countUnknown(Z.MODES.weapon, pool, '射速', 'warfare'), 0);
+  // 合成卡池:1 把未收录战场伤害 + 1 把已收录,验证计数逻辑本身
+  const pool = [
+    { nickname: 'ZZ未知枪', 有用: true, 伤害: 50, 战场伤害: null, 战场伤害同烽火: false, 射速: 600 },
+    { nickname: 'ZZ已知枪', 有用: true, 伤害: 30, 战场伤害: 24, 战场伤害同烽火: false, 射速: 750 },
+  ];
+  // 用真实的 MODES.weapon 配置(含 resolveValue 的按子模式取值逻辑)
+  const cfg = Z.MODES.weapon;
+  assert.equal(Z.countUnknown(cfg, pool, '伤害', 'warfare'), 1, '只有 1 把战场伤害未收录');
+  assert.equal(Z.countUnknown(cfg, pool, '射速', 'ops'), 0, '射速字段全有值');
+  // 真实数据(2026-10-01 起战场伤害已全部收录)不应再有未知条目
+  const realPool = Z.getPool(Z.MODES.weapon, 'warfare');
+  assert.equal(Z.countUnknown(Z.MODES.weapon, realPool, '伤害', 'warfare'), 0);
   assert.equal(Z.countUnknown(Z.MODES.weapon, Z.getPool(Z.MODES.weapon, 'ops'), '伤害', 'ops'), 0);
 });
 
@@ -335,7 +345,7 @@ test('全面战场伤害覆盖率:已补到 59/68,未收录不超过 10 把且�
 test('本次补入的 16 把战场伤害与来源记录一致(防回退)', () => {
   const expected = {
     'PSG-1': 35, SR9: 35, 'SR-25': 35, SKS: 27, SVD: 40, VSS: 33, 'Mini-14': 25,
-    AWM: 100, M700: 72, R93: 74, 'SV-98': 76, G17: 33, G18: 14, 沙漠之鹰: 50, '.357左轮': 52, 'QSZ-92G': 34,
+    AWM: 100, M700: 72, R93: 100, 'SV-98': 76, G17: 33, G18: 14, 沙漠之鹰: 50, '.357左轮': 52, 'QSZ-92G': 34,
   };
   for (const [nickname, damage] of Object.entries(expected)) {
     const w = WEAPONS.find((x) => x.nickname === nickname);
@@ -344,15 +354,18 @@ test('本次补入的 16 把战场伤害与来源记录一致(防回退)', () =>
   }
   // M1911 是采用该数据集的依据:游戏内实测 35,而 dfttk 给的是 25
   assert.equal(Z.damageOf(WEAPONS.find((w) => w.nickname === 'M1911'), 'warfare'), 35);
+  // R93 玩家修正:社区数据集给 74,实测为 100(2026-10-01)
+  assert.equal(Z.damageOf(WEAPONS.find((w) => w.nickname === 'R93'), 'warfare'), 100, 'R93 实测 100');
 });
 
-test('霰弹枪「伤害明细」等于 单弹丸×弹丸数,且乘回去≈总伤', () => {
+test('霰弹枪「伤害明细」为「单弹丸×弹丸数」,首档乘回去≈总伤', () => {
   const shotguns = WEAPONS.filter((w) => w.类型 === '霰弹枪' && w.伤害明细);
   assert.ok(shotguns.length >= 3);
   for (const sg of shotguns) {
-    const m = /^(\d+)×(\d+)$/.exec(sg.伤害明细);
-    assert.ok(m, `${sg.nickname} 伤害明细格式应为「单弹丸×弹丸数」`);
-    assert.equal(Number(m[1]) * Number(m[2]), sg.伤害, `${sg.nickname} 明细与总伤不一致`);
+    // 允许双射击模式用「18×8 / 25×8」形式:取第一档(面板默认档)与「伤害」核对
+    const m = /^(\d+)×(\d+)(?:\s*\/\s*\d+×\d+)?$/.exec(sg.伤害明细);
+    assert.ok(m, `${sg.nickname} 伤害明细格式应为「单弹丸×弹丸数」(可含 / 第二档)`);
+    assert.equal(Number(m[1]) * Number(m[2]), sg.伤害, `${sg.nickname} 首档明细与总伤不一致`);
   }
 });
 
