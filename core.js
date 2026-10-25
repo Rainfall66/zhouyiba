@@ -369,12 +369,17 @@
   }
 
   /** ---------- 每日一题 ---------- */
-  /** 本地日期键 YYYY-MM-DD */
+  /** 北京时间固定偏移。日期键统一按 UTC+8 取,不跟随访问者设备的时区,
+   *  否则 UTC-5 的玩家会在北京时间凌晨 5 点前后拿到与国内不同的「今日一题」 */
+  var TZ_OFFSET_MS = 8 * 3600 * 1000;
+
+  /** 北京时间日期键 YYYY-MM-DD(与设备时区无关) */
   function dayKey(date) {
-    var d = date || new Date();
-    var m = String(d.getMonth() + 1);
-    var day = String(d.getDate());
-    return d.getFullYear() + '-' + (m.length < 2 ? '0' + m : m) + '-' + (day.length < 2 ? '0' + day : day);
+    var ms = date && typeof date.getTime === 'function' ? date.getTime() : Date.now();
+    var d = new Date(ms + TZ_OFFSET_MS);
+    var m = d.getUTCMonth() + 1;
+    var day = d.getUTCDate();
+    return d.getUTCFullYear() + '-' + (m < 10 ? '0' + m : m) + '-' + (day < 10 ? '0' + day : day);
   }
 
   /** FNV-1a 32 位散列:同一个种子串在任何浏览器/时区下都得到同一结果 */

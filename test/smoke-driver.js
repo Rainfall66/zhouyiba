@@ -66,7 +66,9 @@
     log('武器卡:' + el('weapon-count').textContent);
     log('战绩行:' + el('start-stats').textContent);
     check('干员收录数渲染', /17 名干员/.test(el('operator-count').textContent));
-    check('武器卡显示卡池与未收录提示', /68 把/.test(el('weapon-count').textContent) && /未收录/.test(el('weapon-count').textContent));
+    // 只验「两个卡池都渲染出数量」这个机制;不依赖数据里是否恰有未收录项
+    // (数据补全后不再出现「未收录」后缀,那是数据状态,不是机制)
+    check('武器卡显示两个卡池数量', /烽火地带 \d+ 把 · 全面战场 \d+ 把/.test(el('weapon-count').textContent));
     check('初始开始按钮禁用', el('start-btn').disabled === true);
     check('开始页无候选列表', !el('suggestions').classList.contains('open'));
 
@@ -137,7 +139,8 @@
     check('进入武器局', visible(el('game-screen')) && UI.state.modeId === 'weapon');
     var status = el('status-text').textContent;
     log('战场状态行:' + status);
-    check('战场状态行提示未收录伤害', /未收录/.test(status));
+    // 同上:正常局面状态行给的是「共 N 次机会」;「未收录」只在数据有缺口时出现
+    check('战场状态行给出次数提示', /共 \d+ 次机会/.test(status));
     check('棋盘表头 7 列(武器名 + 6)', document.querySelectorAll('#board-head th').length === 7);
     check('表头 data-mode 已切换', el('board').getAttribute('data-mode') === 'weapon');
     click('rules-trigger-game');

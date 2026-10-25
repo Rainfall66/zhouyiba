@@ -229,9 +229,18 @@ test('activeRecentNames:1 小时窗口外自动过期', () => {
 
 // ---------------------------------------------------------------- 每日一题
 
-test('dayKey:补零成 YYYY-MM-DD', () => {
-  assert.equal(Z.dayKey(new Date(2026, 0, 5)), '2026-01-05');
-  assert.equal(Z.dayKey(new Date(2026, 11, 31)), '2026-12-31');
+test('dayKey:按北京时间(UTC+8)归一化,与设备时区无关', () => {
+  // 用带偏移的 ISO 串构造"绝对时刻",断言才不受跑测试这台机器的时区影响
+  assert.equal(Z.dayKey(new Date('2026-10-25T23:59:59+08:00')), '2026-10-25');
+  assert.equal(Z.dayKey(new Date('2026-10-26T00:00:00+08:00')), '2026-10-26');
+  // 同一个绝对时刻,换 UTC 写法也必须落到北京日期上
+  assert.equal(Z.dayKey(new Date('2026-10-25T15:59:59Z')), '2026-10-25');
+  assert.equal(Z.dayKey(new Date('2026-10-25T16:00:00Z')), '2026-10-26');
+  // 月初/年末补零与跨年
+  assert.equal(Z.dayKey(new Date('2026-01-05T12:00:00+08:00')), '2026-01-05');
+  assert.equal(Z.dayKey(new Date('2026-12-31T23:30:00+08:00')), '2026-12-31');
+  // 无参数时用当前时刻,仍应是合法的 YYYY-MM-DD
+  assert.match(Z.dayKey(), /^\d{4}-\d{2}-\d{2}$/);
 });
 
 test('dailyTarget:同一天同一模式目标固定,不同模式/日期种子不同', () => {
